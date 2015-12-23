@@ -1,0 +1,2 @@
+与sql server数据库中Student表字段相关联的POJO类
+
