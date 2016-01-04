@@ -67,4 +67,9 @@
         <update parameterType="java.util.HashMap" id="updateStudent">
                 UPDATE student SET birthday=#{birthday},address=#{address} where address=#{address_stu}
         </update>
+        
+        <select id="proce_1" parameterType="java.lang.String" resultType="com.mybatis.pojo.Student" statementType="CALLABLE">
+        		exec demo_queryStudent #{value}
+        </select>
+        
 </mapper>
